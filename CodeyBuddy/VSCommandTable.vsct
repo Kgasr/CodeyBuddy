@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Include href="KnownImageIds.vsct"/>
+	<Include href="VSGlobals.vsct"/>
+
+	<Commands package="CodeyBuddy">
+
+		<Groups>
+			<Group guid="CodeyBuddy" id="CodeyBuddySubMenuGroup" />
+			<Group guid="CodeyBuddy" id="CodeyBuddyCommandsGroup" />
+		</Groups>
+
+		<Menus>
+			<Menu guid="CodeyBuddy" id="CodeyBuddySubMenu" type="Menu">
+				<Strings>
+					<ButtonText>CodeyBuddy</ButtonText>
+				</Strings>
+			</Menu>
+		</Menus>
+
+		<Buttons>
+			<Button guid="CodeyBuddy" id="SuggestCode" priority="0x0001" type="Button">
+				<Icon guid="CodeyBuddySuggestCodeIcon" id="SuggestCodeIcon" />
+				<Strings>
+					<ButtonText>SuggestCode</ButtonText>
+					<LocCanonicalName>.CodeyBuddy.SuggestCode</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="CodeyBuddy" id="OptimizeCode" priority="0x0100" type="Button">
+				<Icon guid="CodeyBuddyOptimizeCodeIcon" id="OptimizeCodeIcon" />
+				<Strings>
+					<ButtonText>Optimize Code</ButtonText>
+					<LocCanonicalName>.CodeyBuddy.OptimizeCode</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="CodeyBuddy" id="ExplainCode" priority="0x0200" type="Button">
+				<Icon guid="CodeyBuddyExplainCodeIcon" id="ExplainCodeIcon" />
+				<Strings>
+					<ButtonText>Explain Code</ButtonText>
+					<LocCanonicalName>.CodeyBuddy.ExplainCode</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="CodeyBuddy" id="AddTests" priority="0x0300" type="Button">
+				<Icon guid="CodeyBuddyAddTestsIcon" id="AddTestsIcon" />
+				<Strings>
+					<ButtonText>Add Tests</ButtonText>
+					<LocCanonicalName>.CodeyBuddy.AddTests</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="CodeyBuddy" id="AskAnything" priority="0x0400" type="Button">
+				<Icon guid="CodeyBuddyAskAnythingIcon" id="AskAnythingIcon" />
+				<Strings>
+					<ButtonText>Ask Anything</ButtonText>
+					<LocCanonicalName>.CodeyBuddy.AskAnything</LocCanonicalName>
+				</Strings>
+			</Button>
+		</Buttons>
+
+
+	</Commands>
+
+	<KeyBindings>
+		<KeyBinding guid="CodeyBuddy" id="SuggestCode" mod1="ALT" key1="1" editor="guidVSStd97" />
+		<KeyBinding guid="CodeyBuddy" id="OptimizeCode" mod1="ALT" key1="2" editor="guidVSStd97" />
+		<KeyBinding guid="CodeyBuddy" id="ExplainCode" mod1="ALT" key1="3" editor="guidVSStd97" />
+		<KeyBinding guid="CodeyBuddy" id="AddTests" mod1="ALT" key1="4" editor="guidVSStd97" />
+		<KeyBinding guid="CodeyBuddy" id="AskAnything" mod1="ALT" key1="5" editor="guidVSStd97" />
+	</KeyBindings>
+
+	<CommandPlacements>
+		<CommandPlacement guid="CodeyBuddy" id="CodeyBuddySubMenuGroup" priority="0x0100">
+			<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+		</CommandPlacement>
+
+		<CommandPlacement guid="CodeyBuddy" id="CodeyBuddySubMenu" priority="0x100">
+			<Parent guid="CodeyBuddy" id="CodeyBuddySubMenuGroup"/>
+		</CommandPlacement>
+
+		<CommandPlacement guid="CodeyBuddy" id="CodeyBuddyCommandsGroup" priority="0x0100">
+			<Parent guid="CodeyBuddy" id="CodeyBuddySubMenu"/>
+		</CommandPlacement>
+
+		<CommandPlacement guid="CodeyBuddy" id="SuggestCode" priority="0x0001" >
+			<Parent guid="CodeyBuddy" id="CodeyBuddyCommandsGroup"/>
+		</CommandPlacement>
+		<CommandPlacement guid="CodeyBuddy" id="OptimizeCode" priority="0x0100" >
+			<Parent guid="CodeyBuddy" id="CodeyBuddyCommandsGroup"/>
+		</CommandPlacement>
+		<CommandPlacement guid="CodeyBuddy" id="ExplainCode" priority="0x0200" >
+			<Parent guid="CodeyBuddy" id="CodeyBuddyCommandsGroup"/>
+		</CommandPlacement>
+		<CommandPlacement guid="CodeyBuddy" id="AddTests" priority="0x0300" >
+			<Parent guid="CodeyBuddy" id="CodeyBuddyCommandsGroup"/>
+		</CommandPlacement>
+		<CommandPlacement guid="CodeyBuddy" id="AskAnything" priority="0x0400" >
+			<Parent guid="CodeyBuddy" id="CodeyBuddyCommandsGroup"/>
+		</CommandPlacement>
+	</CommandPlacements>
+
+	<Symbols>
+		<GuidSymbol name="CodeyBuddy" value="{a8eb0343-b35c-4175-95d8-50549e609ff3}">
+			<IDSymbol name="CodeyBuddySubMenuGroup" value="0x1000" />
+			<IDSymbol name="CodeyBuddyCommandsGroup" value="0x1001" />
+			<IDSymbol name="CodeyBuddySubMenu" value="0x2000" />
+
+			<IDSymbol name="SuggestCode" value="0x0001" />
+			<IDSymbol name="OptimizeCode" value="0x0100" />
+			<IDSymbol name="ExplainCode" value="0x0200" />
+			<IDSymbol name="AddTests" value="0x0300" />
+			<IDSymbol name="AskAnything" value="0x0400" />
+		</GuidSymbol>
+
+		<GuidSymbol value="{8b0b1a54-4655-4dae-8984-022f82a739f2}" name="guidCodeyBuddyPackageCmdSet">
+			<IDSymbol value="256" name="cmdidTerminalWindowCommand" />
+			<IDSymbol value="257" name="cmdidTerminalWindowTurboCommand" />
+		</GuidSymbol>
+
+		<GuidSymbol name="CodeyBuddySuggestCodeIcon" value="{C12A8ED0-FBE5-4815-A3FB-2CB73AB06EEA}">
+			<IDSymbol name="SuggestCodeIcon" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="CodeyBuddyOptimizeCodeIcon" value="{C12A8ED0-FBE5-4815-A3FB-2CB73AB06EEB}">
+			<IDSymbol name="OptimizeCodeIcon" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="CodeyBuddyExplainCodeIcon" value="{C12A8ED0-FBE5-4815-A3FB-2CB73AB06EEC}">
+			<IDSymbol name="ExplainCodeIcon" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="CodeyBuddyAddTestsIcon" value="{C12A8ED0-FBE5-4815-A3FB-2CB73AB06EED}">
+			<IDSymbol name="AddTestsIcon" value="1" />
+		</GuidSymbol>
+		<GuidSymbol name="CodeyBuddyAskAnythingIcon" value="{C12A8ED0-FBE5-4815-A3FB-2CB73AB06EEE}">
+			<IDSymbol name="AskAnythingIcon" value="1" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>

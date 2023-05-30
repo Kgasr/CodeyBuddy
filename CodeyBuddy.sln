@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeyBuddy", "CodeyBuddy\CodeyBuddy.csproj", "{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|arm64 = Debug|arm64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|arm64 = Release|arm64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Debug|arm64.Build.0 = Debug|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Debug|x86.ActiveCfg = Debug|x86
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Debug|x86.Build.0 = Debug|x86
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Release|arm64.ActiveCfg = Release|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Release|arm64.Build.0 = Release|Any CPU
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Release|x86.ActiveCfg = Release|x86
+		{71DF02FF-5493-4B1C-A5C6-E204FFD744AD}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1E2E009-F1FC-4827-870C-67C692800402}
+	EndGlobalSection
+EndGlobal
